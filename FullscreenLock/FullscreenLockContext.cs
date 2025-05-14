@@ -81,7 +81,8 @@ namespace FullscreenLock
 
         private void QuitMenuItem_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Environment.Exit(1);
+            //Application.Exit();
         }
     }
 }
