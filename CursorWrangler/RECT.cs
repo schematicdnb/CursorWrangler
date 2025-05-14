@@ -5,7 +5,7 @@ using System.Runtime.InteropServices;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace FullscreenLock
+namespace CursorWrangler
 {
     [StructLayout(LayoutKind.Sequential)]
     public struct RECT

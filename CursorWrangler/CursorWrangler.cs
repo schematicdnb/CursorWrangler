@@ -1,13 +1,13 @@
 ﻿using System;
 using System.Windows.Forms;
 
-namespace FullscreenLock
+namespace CursorWrangler
 {
-    public partial class FullscreenLock : Form
+    public partial class CursorWrangler : Form
     {
         public event EventHandler ActiveStateToggled;
 
-        public FullscreenLock()
+        public CursorWrangler()
         {
             InitializeComponent();
             MinimizeOnCloseCheckBox.Checked = Properties.Settings.Default.MinimizeOnClose;
@@ -20,7 +20,7 @@ namespace FullscreenLock
             Properties.Settings.Default.Save();
         }
 
-        private void FullscreenLock_FormClosing(object sender, FormClosingEventArgs e)
+        private void CursorWrangler_FormClosing(object sender, FormClosingEventArgs e)
         {
             if (MinimizeOnCloseCheckBox.Checked)
             {
@@ -34,7 +34,7 @@ namespace FullscreenLock
             }
         }
 
-        private void FullscreenLock_Resize(object sender, EventArgs e)
+        private void CursorWrangler_Resize(object sender, EventArgs e)
         {
             if (WindowState == FormWindowState.Minimized)
                 SetVisibility(false);

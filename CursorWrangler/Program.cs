@@ -4,7 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace FullscreenLock
+namespace CursorWrangler
 {
     static class Program
     {
@@ -16,7 +16,7 @@ namespace FullscreenLock
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new FullscreenLockContext());
+            Application.Run(new CursorWranglerContext());
         }
     }
 }
