@@ -9,6 +9,7 @@ namespace CursorWrangler
         /// </summary>
         private System.ComponentModel.IContainer components = null;
         private System.Windows.Forms.CheckBox MinimizeOnCloseCheckBox;
+        private System.Windows.Forms.CheckBox LaunchOnStartupCheckBox;
 
         /// <summary>
         /// Clean up any resources being used.
@@ -36,6 +37,7 @@ namespace CursorWrangler
             this.StatusLabel = new System.Windows.Forms.Label();
             this.MadeByLabel = new System.Windows.Forms.Label();
             this.MinimizeOnCloseCheckBox = new System.Windows.Forms.CheckBox();
+            this.LaunchOnStartupCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // ToggleButton
@@ -60,6 +62,30 @@ namespace CursorWrangler
             this.StatusLabel.Text = "Waiting for focus";
             this.StatusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // LaunchOnStartupCheckBox
+            // 
+            this.LaunchOnStartupCheckBox.AutoSize = true;
+            this.LaunchOnStartupCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.LaunchOnStartupCheckBox.Location = new System.Drawing.Point(18, 90);
+            this.LaunchOnStartupCheckBox.Name = "LaunchOnStartupCheckBox";
+            this.LaunchOnStartupCheckBox.Size = new System.Drawing.Size(187, 17);
+            this.LaunchOnStartupCheckBox.TabIndex = 2;
+            this.LaunchOnStartupCheckBox.Text = "Launch at startup";
+            this.LaunchOnStartupCheckBox.UseVisualStyleBackColor = true;
+            this.LaunchOnStartupCheckBox.Checked = true;
+            // 
+            // MinimizeOnCloseCheckBox
+            // 
+            this.MinimizeOnCloseCheckBox.AutoSize = true;
+            this.MinimizeOnCloseCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MinimizeOnCloseCheckBox.Location = new System.Drawing.Point(18, 125);
+            this.MinimizeOnCloseCheckBox.Name = "MinimizeOnCloseCheckBox";
+            this.MinimizeOnCloseCheckBox.Size = new System.Drawing.Size(187, 17);
+            this.MinimizeOnCloseCheckBox.TabIndex = 3;
+            this.MinimizeOnCloseCheckBox.Text = "Minimize to taskbar on close";
+            this.MinimizeOnCloseCheckBox.UseVisualStyleBackColor = true;
+            this.MinimizeOnCloseCheckBox.Checked = true;
+            // 
             // MadeByLabel
             // 
             this.MadeByLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
@@ -67,21 +93,9 @@ namespace CursorWrangler
             this.MadeByLabel.Location = new System.Drawing.Point(12, 150);
             this.MadeByLabel.Name = "MadeByLabel";
             this.MadeByLabel.Size = new System.Drawing.Size(205, 44);
-            this.MadeByLabel.TabIndex = 2;
+            this.MadeByLabel.TabIndex = 4;
             this.MadeByLabel.Text = "✨ Made by Blåberry and the community ✨";
             this.MadeByLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-            // 
-            // MinimizeOnCloseCheckBox
-            // 
-            this.MinimizeOnCloseCheckBox.AutoSize = true;
-            this.MinimizeOnCloseCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MinimizeOnCloseCheckBox.Location = new System.Drawing.Point(18, 105);
-            this.MinimizeOnCloseCheckBox.Name = "MinimizeOnCloseCheckBox";
-            this.MinimizeOnCloseCheckBox.Size = new System.Drawing.Size(187, 17);
-            this.MinimizeOnCloseCheckBox.TabIndex = 3;
-            this.MinimizeOnCloseCheckBox.Text = "Minimize to taskbar on close";
-            this.MinimizeOnCloseCheckBox.UseVisualStyleBackColor = true;
-            this.MinimizeOnCloseCheckBox.Checked = true;
             // 
             // CursorWrangler
             // 
@@ -91,11 +105,11 @@ namespace CursorWrangler
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.ClientSize = new System.Drawing.Size(234, 211);
             this.Controls.Add(this.ToggleButton);
+            this.Controls.Add(this.LaunchOnStartupCheckBox);
             this.Controls.Add(this.MinimizeOnCloseCheckBox);
             this.Controls.Add(this.MadeByLabel);
             this.Controls.Add(this.StatusLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Icon = Properties.Resources.CursorIcon;
             this.KeyPreview = true;
             this.MaximizeBox = false;
