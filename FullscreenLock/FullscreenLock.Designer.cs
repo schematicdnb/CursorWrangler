@@ -35,6 +35,7 @@ namespace FullscreenLock
             this.ToggleButton = new System.Windows.Forms.Button();
             this.StatusLabel = new System.Windows.Forms.Label();
             this.MadeByLabel = new System.Windows.Forms.Label();
+            this.MinimizeOnCloseCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
             // 
             // ToggleButton
@@ -48,17 +49,6 @@ namespace FullscreenLock
             this.ToggleButton.Text = "Toggle";
             this.ToggleButton.UseVisualStyleBackColor = true;
             this.ToggleButton.Click += new System.EventHandler(this.ToggleButton_Click);
-            
-            // MinimizeOnCloseCheckBox
-            this.MinimizeOnCloseCheckBox = new System.Windows.Forms.CheckBox();
-            this.MinimizeOnCloseCheckBox.AutoSize = true;
-            this.MinimizeOnCloseCheckBox.Location = new System.Drawing.Point(25, 120);
-            this.MinimizeOnCloseCheckBox.Name = "MinimizeOnCloseCheckBox";
-            this.MinimizeOnCloseCheckBox.Size = new System.Drawing.Size(160, 17);
-            this.MinimizeOnCloseCheckBox.TabIndex = 3;
-            this.MinimizeOnCloseCheckBox.Text = "Minimize to taskbar on close";
-            this.MinimizeOnCloseCheckBox.UseVisualStyleBackColor = true;
-
             // 
             // StatusLabel
             // 
@@ -81,30 +71,43 @@ namespace FullscreenLock
             this.MadeByLabel.Text = "✨ Made by Blåberry and the community ✨";
             this.MadeByLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
+            // MinimizeOnCloseCheckBox
+            // 
+            this.MinimizeOnCloseCheckBox.AutoSize = true;
+            this.MinimizeOnCloseCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            this.MinimizeOnCloseCheckBox.Location = new System.Drawing.Point(18, 105);
+            this.MinimizeOnCloseCheckBox.Name = "MinimizeOnCloseCheckBox";
+            this.MinimizeOnCloseCheckBox.Size = new System.Drawing.Size(187, 17);
+            this.MinimizeOnCloseCheckBox.TabIndex = 3;
+            this.MinimizeOnCloseCheckBox.Text = "Minimize to taskbar on close";
+            this.MinimizeOnCloseCheckBox.UseVisualStyleBackColor = true;
+            // 
             // FullscreenLock
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
-            this.ClientSize = new System.Drawing.Size(229, 141);
+            this.ClientSize = new System.Drawing.Size(234, 211);
             this.Controls.Add(this.ToggleButton);
             this.Controls.Add(this.MinimizeOnCloseCheckBox);
             this.Controls.Add(this.MadeByLabel);
             this.Controls.Add(this.StatusLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            //this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.Icon = Properties.Resources.CursorIcon;
             this.KeyPreview = true;
             this.MaximizeBox = false;
             this.MaximumSize = new System.Drawing.Size(250, 250);
             this.MinimumSize = new System.Drawing.Size(250, 250);
             this.Name = "FullscreenLock";
-            this.ShowIcon = false;
+            this.ShowIcon = true;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.Text = "FullscreenLock";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.FullscreenLock_FormClosing);
             this.Resize += new System.EventHandler(this.FullscreenLock_Resize);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

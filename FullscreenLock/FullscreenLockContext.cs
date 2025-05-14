@@ -38,7 +38,7 @@ namespace FullscreenLock
             TrayIconContextMenu.SuspendLayout();
 
             TrayIcon.ContextMenuStrip = TrayIconContextMenu;
-            TrayIcon.Icon = Properties.Resources.Gaben;
+            TrayIcon.Icon = Properties.Resources.CursorIcon;
             TrayIcon.Text = "FullscreenLock";
             TrayIcon.Visible = true;
             TrayIcon.MouseClick += new MouseEventHandler(TrayIcon_MouseClick);

@@ -50,7 +50,7 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup>
-    <ApplicationIcon>gaben.ico</ApplicationIcon>
+    <ApplicationIcon>cursor.ico</ApplicationIcon>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -107,7 +107,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="gaben.ico" />
+    <Content Include="cursor.ico" />
     <None Include="Resources\TrayIcon.ico" />
   </ItemGroup>
   <ItemGroup>
