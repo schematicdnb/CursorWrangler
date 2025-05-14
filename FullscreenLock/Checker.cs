@@ -78,7 +78,7 @@ namespace FullscreenLock
                     //determine if window is fullscreen
                     screenBounds = Screen.FromHandle(hWnd).Bounds;
                     GetWindowThreadProcessId(hWnd, out uint procid);
-                    var proc = Process.GetProcessById((int)procid);
+                    //var proc = Process.GetProcessById((int)procid);
                     //Point cursorPos = Cursor.Position;
                     //Console.WriteLine(cursorPos);
                     if ((appBounds.Bottom - appBounds.Top) == screenBounds.Height && (appBounds.Right - appBounds.Left) == screenBounds.Width)

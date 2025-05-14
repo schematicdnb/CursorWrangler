@@ -81,6 +81,7 @@ namespace FullscreenLock
             this.MinimizeOnCloseCheckBox.TabIndex = 3;
             this.MinimizeOnCloseCheckBox.Text = "Minimize to taskbar on close";
             this.MinimizeOnCloseCheckBox.UseVisualStyleBackColor = true;
+            this.MinimizeOnCloseCheckBox.Checked = true;
             // 
             // FullscreenLock
             // 

@@ -10,6 +10,14 @@ namespace FullscreenLock
         public FullscreenLock()
         {
             InitializeComponent();
+            MinimizeOnCloseCheckBox.Checked = Properties.Settings.Default.MinimizeOnClose;
+            MinimizeOnCloseCheckBox.CheckedChanged += MinimizeOnCloseCheckBox_CheckedChanged;
+        }
+
+        private void MinimizeOnCloseCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            Properties.Settings.Default["MinimizeOnClose"] = MinimizeOnCloseCheckBox.Checked;
+            Properties.Settings.Default.Save();
         }
 
         private void FullscreenLock_FormClosing(object sender, FormClosingEventArgs e)
