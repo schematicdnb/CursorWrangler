@@ -8,8 +8,12 @@ namespace CursorWrangler
         /// Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
+        private System.Windows.Forms.Button ToggleButton;
+        private System.Windows.Forms.Label StatusLabel;
+        //private System.Windows.Forms.Label MadeByLabel;
         private System.Windows.Forms.CheckBox MinimizeOnCloseCheckBox;
         private System.Windows.Forms.CheckBox LaunchOnStartupCheckBox;
+
 
         /// <summary>
         /// Clean up any resources being used.
@@ -35,7 +39,7 @@ namespace CursorWrangler
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CursorWrangler));
             this.ToggleButton = new System.Windows.Forms.Button();
             this.StatusLabel = new System.Windows.Forms.Label();
-            this.MadeByLabel = new System.Windows.Forms.Label();
+            //this.MadeByLabel = new System.Windows.Forms.Label();
             this.MinimizeOnCloseCheckBox = new System.Windows.Forms.CheckBox();
             this.LaunchOnStartupCheckBox = new System.Windows.Forms.CheckBox();
             this.SuspendLayout();
@@ -88,14 +92,14 @@ namespace CursorWrangler
             // 
             // MadeByLabel
             // 
-            this.MadeByLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
-            this.MadeByLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-            this.MadeByLabel.Location = new System.Drawing.Point(12, 150);
-            this.MadeByLabel.Name = "MadeByLabel";
-            this.MadeByLabel.Size = new System.Drawing.Size(205, 44);
-            this.MadeByLabel.TabIndex = 4;
-            this.MadeByLabel.Text = "✨ Made by Blåberry and the community ✨";
-            this.MadeByLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            //this.MadeByLabel.Anchor = System.Windows.Forms.AnchorStyles.Bottom;
+            //this.MadeByLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
+            //this.MadeByLabel.Location = new System.Drawing.Point(12, 150);
+            //this.MadeByLabel.Name = "MadeByLabel";
+            //this.MadeByLabel.Size = new System.Drawing.Size(205, 44);
+            //this.MadeByLabel.TabIndex = 4;
+            //this.MadeByLabel.Text = "✨ Made by Blåberry and the community ✨";
+            //this.MadeByLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // CursorWrangler
             // 
@@ -107,14 +111,14 @@ namespace CursorWrangler
             this.Controls.Add(this.ToggleButton);
             this.Controls.Add(this.LaunchOnStartupCheckBox);
             this.Controls.Add(this.MinimizeOnCloseCheckBox);
-            this.Controls.Add(this.MadeByLabel);
+            //this.Controls.Add(this.MadeByLabel);
             this.Controls.Add(this.StatusLabel);
             this.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = Properties.Resources.CursorIcon;
             this.KeyPreview = true;
             this.MaximizeBox = false;
-            this.MaximumSize = new System.Drawing.Size(250, 250);
-            this.MinimumSize = new System.Drawing.Size(250, 250);
+            this.MaximumSize = new System.Drawing.Size(250, 200);
+            this.MinimumSize = new System.Drawing.Size(250, 200);
             this.Name = "CursorWrangler";
             this.ShowIcon = true;
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
@@ -128,8 +132,6 @@ namespace CursorWrangler
 
         #endregion
 
-        private System.Windows.Forms.Button ToggleButton;
-        public System.Windows.Forms.Label StatusLabel;
-        private System.Windows.Forms.Label MadeByLabel;
+
     }
 }
