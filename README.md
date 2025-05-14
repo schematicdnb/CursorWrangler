@@ -3,7 +3,7 @@ CursorWrangler constrains the mouse cursor to fullscreen/borderless application 
 
 ## Credits
 - Thanks to PrimaryLock by AKADEVIL for the original cursor constraining.
-- Thanks to FullscreenLock by @blaberry for the automatic focus-based switching.
+- Thanks to FullscreenLock by blaberry for the automatic focus-based switching.
 
 ## New Features
 - Improved task tray functionality
