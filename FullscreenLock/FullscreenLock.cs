@@ -12,9 +12,18 @@ namespace FullscreenLock
             InitializeComponent();
         }
 
-        private void FullscreenLock_FormClosed(object sender, FormClosedEventArgs e)
+        private void FullscreenLock_FormClosing(object sender, FormClosingEventArgs e)
         {
-            Application.Exit();
+            if (MinimizeOnCloseCheckBox.Checked)
+            {
+                e.Cancel = true;
+                WindowState = FormWindowState.Minimized;
+                SetVisibility(false);
+            }
+            else
+            {
+                Application.Exit();
+            }
         }
 
         private void FullscreenLock_Resize(object sender, EventArgs e)
